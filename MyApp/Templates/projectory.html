@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Smartwatch App Project Details</h1>
+    
+        <section id="project-overview" class="mb-5">
+            <h2>Project Overview</h2>
+            <p><strong>Objective:</strong> This app helps users track their fitness data, including calories burned, steps taken, and heart rate. It stores and visualizes the user's fitness progress over time.</p>
+        </section>
+    
+        <section id="requirements" class="mb-5">
+            <h2>Requirements</h2>
+            <ul>
+                <li><strong>Core Features:</strong> User authentication, calorie tracking, progress tracking, data storage in a database.</li>
+                <li><strong>Technology:</strong> Django (Backend), SQLite (Database), HTML, CSS, Bootstrap (UI)</li>
+                <li><strong>Timeline:</strong> 3 months to complete the initial version, with ongoing updates after.</li>
+            </ul>
+        </section>
+    
+        <section id="risks" class="mb-5">
+            <h2>Risks</h2>
+            <p><strong>Potential Challenges:</strong> Integration with various smartwatch models, ensuring accurate tracking, and user data privacy/security.</p>
+        </section>
+
+        <section id="future-enhancements" class="mb-5">
+            <h2>Future Enhancements</h2>
+            <ul>
+                <li>Integration with fitness trackers and smartwatches to automatically fetch activity data.</li>
+                <li>Visualization of user data through graphs and charts for better insights.</li>
+                <li>Incorporating additional metrics such as steps taken, heart rate, and sleep tracking.</li>
+                <li>Adding support for user profiles with personalized fitness recommendations.</li>
+                <li>Creating a mobile-friendly design for better accessibility.</li>
+            </ul>
+        </section>
+    </div>
+    
+    <div class="d-flex justify-content-center mt-3">
+        <a href="{% url 'Home' %}" class="btn btn-primary mb-2">Back to Home</a>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+    <a href="{% url 'health_data_form' %}" class="btn btn-secondary mb-2" target="_blank">View Project</a>
+    </div>
+
+
+{% endblock %}

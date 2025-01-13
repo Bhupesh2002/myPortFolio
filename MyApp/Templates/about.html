@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <section id="about" class="container py-3">
+    <div class="row">
+      <div class="col-md-6 mt-5">
+        <h2>About Me</h2>
+        <p>
+          Hello! <strong>I’m Bhupesh D</strong>, a passionate web developer with a strong focus on creating responsive, user-friendly web applications. 
+          I specialize in both front-end and back-end development, working with technologies like HTML, CSS, JavaScript, and Django. 
+          I enjoy solving complex problems and translating them into elegant, maintainable code. With a background in computer science, 
+          I have a solid understanding of data structures, algorithms, and design patterns. 
+        </p>
+      </div>
+      <div class="col-md-6" style="text-align:center;">
+        <img src="{% static 'img/DSC_2617.jpg' %}" style="height:400px; width:300px;" alt="Profile Picture" class="img-fluid rounded-circle">
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="container py-3">
+    <h3>Skills</h3>
+    <ul>
+      <li><strong>Programming Languages:</strong> Python</li>
+      <li><strong>Python Frameworks:</strong> Django, Tkinter</li>
+      <li><strong>Databases:</strong> MySQL, MongoDB</li>
+      <li><strong>Web Development:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+      <li><strong>Tools/Technologies:</strong> pyCharm, Visual Studio Code</li>
+    </ul>
+  </section>
+  
+
+  <section id="contact" class="container py-5">
+    <h3>Contact Me</h3>
+    <ul>
+      <li>Email: <a href="mailto:rajanbhupesh@gmail.com" target="_blank">rajanbhupesh@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/bhupesh-d-216b5424a/" target="_blank">linkedin.com/in/bhupeshd</a></li>
+      <li>GitHub: <a href="https://github.com/bhupeshd" target="_blank">github.com/bhupeshd</a></li>
+    </ul>
+
+     <a href="{% url 'Home' %}" class="back-to-home-btn">Back to Home</a>
+  </section>
+{% endblock %}

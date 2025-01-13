@@ -1,0 +1,17 @@
+.back-to-home-btn {
+
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin:50px;
+  margin-left:43%;
+}
+
+.back-to-home-btn:hover {
+  background-color: #0056b3;
+}

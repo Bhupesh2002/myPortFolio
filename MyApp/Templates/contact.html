@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Contact Us</h1>
+
+        <!-- Form -->
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }} <!-- Uses the styling applied in forms.py -->
+            <button type="submit" class="btn btn-primary mt-3">Send Message</button>
+        </form>
+
+        <div class="mb-5 text-center">
+            <a href="{% url 'Home' %}"  class=" btn btn-primary">Back to Home</a>
+        </div>
+    </div>
+{% endblock %}
+
